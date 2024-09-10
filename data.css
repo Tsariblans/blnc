@@ -1,0 +1,196 @@
+/* data.css */
+
+/* General Styling */
+body {
+    background-color: #f4f7fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+
+h1 {
+    color: #3a3f44;
+    margin-bottom: 20px;
+}
+
+/* Container */
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Checkbox Group */
+.checkbox-group-container {
+    margin-bottom: 20px;
+}
+
+.checkbox-group {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.checkbox-group div {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-group label {
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+/* Nav Tabs */
+.nav-tabs .nav-link {
+    color: #495057;
+    border: 1px solid transparent;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+    background: #e9ecef;
+    margin-bottom: -1px;
+}
+
+.nav-tabs .nav-link.active {
+    color: #495057;
+    background-color: #fff;
+    border-color: #dee2e6 #dee2e6 #fff;
+}
+
+.nav-tabs .nav-item {
+    margin-bottom: 0;
+}
+
+/* DataTables Styling */
+.table {
+    margin-top: 20px;
+}
+
+.table thead th {
+    background-color: #343a40;
+    color: #fff;
+    text-align: center;
+}
+
+.table tfoot th {
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.table tbody tr:hover {
+    background-color: #f1f3f5;
+}
+
+/* Search Input Fields */
+.search-row input[type="text"] {
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+}
+
+.search-row input[type="text"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Buttons */
+.btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+    border-color: #bd2130;
+}
+
+.btn {
+    margin: 10px 0;
+}
+
+/* DataTable Pagination and Length */
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+    padding: 6px 12px;
+    margin: 2px;
+    border-radius: 4px;
+    color: #495057;
+    border: 1px solid #ddd;
+    transition: background-color 0.3s;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    background-color: #e9ecef;
+    border-color: #ddd;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current {
+    background-color: #007bff;
+    color: white;
+    border: 1px solid #007bff;
+}
+
+.dataTables_wrapper .dataTables_length select {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    outline: none;
+}
+
+/* Custom Checkboxes */
+.styled-checkbox {
+    display: none;
+}
+
+.styled-checkbox + label {
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+}
+
+.styled-checkbox + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 2px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: #fff;
+    transition: background 0.3s, border-color 0.3s;
+}
+
+.styled-checkbox:checked + label:before {
+    background: #007bff;
+    border-color: #007bff;
+}
+
+.styled-checkbox:checked + label:after {
+    content: '✔';
+    position: absolute;
+    left: 4px;
+    top: -1px;
+    color: #fff;
+    font-size: 14px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .checkbox-group {
+        justify-content: flex-start;
+    }
+
+    .nav-tabs {
+        flex-wrap: wrap;
+    }
+
+    .nav-tabs .nav-link {
+        flex: 1 1 auto;
+        text-align: center;
+    }
+}
